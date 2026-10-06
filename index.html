@@ -163,7 +163,7 @@ let p=0;const pc=$("#pc"),lt=setInterval(()=>{p=Math.min(100,p+(RM?25:4+Math.ran
 setTimeout(()=>$("#ld").classList.add("off"),4500);
 
 // project links (add more URLs here)
-const LINKS={tms:[["Web portal","","r"],["Android APK","",""],["Demo PPT","",""]],taskpilot:[["Open live prototype ↗","https://claude.ai/artifact/5uUDxTvhyawLQdGct7x7Bv",""]],syntrolabs:[["Visit site ↗","",""]],fraudlens:[["Open live prototype ↗","https://claude.ai/artifact/WGLoVFJR95xBntajMwpL6w",""]]};
+const LINKS={tms:[["Web portal","","r"],["Android APK","",""],["Demo PPT","",""]],taskpilot:[["Open live prototype ↗","https://tmsprototype.vercel.app/",""]],syntrolabs:[["Visit site ↗","",""]],fraudlens:[["Open live prototype ↗","https://syntrolabs.in",""]]};
 document.querySelectorAll("[data-l]").forEach(e=>{e.innerHTML=LINKS[e.dataset.l].filter(l=>l[1]).map(l=>`<a class="${l[2]}" href="${l[1]}" target="_blank" rel="noopener">${l[0]}</a>`).join("")});
 // scroll progress
 addEventListener("scroll",()=>{$("#prog").style.width=(scrollY/(document.documentElement.scrollHeight-innerHeight)*100)+"%"},{passive:true});
